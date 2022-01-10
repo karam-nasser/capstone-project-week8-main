@@ -1,0 +1,367 @@
+body {
+  box-shadow: 2px 4px 8px 4px rgb(250, 249, 249);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+} 
+
+body
+  { background-color: black;
+  color: white; 
+  margin-bottom: 100px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #000000;
+  -webkit-border-radius: 30px;
+  border-radius: 40px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #000000;
+    box-shadow: 0 0 3px #ffffff;
+  }
+  50% {
+    background-color: #000000;
+    box-shadow: 0 0 10px #ffffff;
+  }
+  100% {
+    background-color: #000000;
+    box-shadow: 0 0 3px #ffffff;
+  }
+}
+
+.button {
+  animation: glowing 1300ms infinite;
+}
+
+.background {
+  animation: glowing 1300ms infinite;
+}
+
+.text {
+  border: 2px solid #ffffff;
+  font-size: 22px;
+  -webkit-transition: box-shadow linear 1s;
+  transition: box-shadow linear 1s;
+}
+.text:focus {
+  box-shadow: 0 0 20px #ffffff;
+}
+
+img {
+  width: 100%;
+  float: none;
+}
+
+@font-face{
+  font-family: "DarkSeed-qZ3Rx";
+  src:url("./DarkSeed-qZ3Rx.ttf");
+}
+
+*{font-family:Darkseed-qZ3Rx;}
+
+/* minimal sm icons */
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+    margin: 0;
+    padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #ffffff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #ffffff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #ffffff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #ffffff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+    color: #000;
+    text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    transition: all ease 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}
+
+.avatar-wrapper {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: 50px auto;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 1px 1px 15px -5px fffff;
+	transition: all 0.3s ease;
+}
+
+.hover {
+		transform: scale(1.05);
+		cursor: pointer;
+  }
+
+.hover .profile-pic {
+		opacity: none;
+	}
+	.profile-pic {
+		height: 100%;
+		width: 100%;
+		transition: all 0.3s ease;
+  }
+
+.after {
+			font-family: FontAwesome;
+			content: "\f007";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			font-size: 190px;
+			background: #ffffff;
+			color: #ffffff;
+			text-align: center;
+		}
+
+	.upload-button {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+  }
+	
+  .fa-arrow-circle-up {
+			position: absolute;
+			font-size: 234px;
+			top: -17px;
+			left: 0;
+			text-align: center;
+			opacity: 0;
+			transition: all 0.3s ease;
+			color: #ffffff;
+		}
+	  
+    .hover .fa-arrow-circle-up {
+			opacity: none;
+		}
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  background-color:black;
+}
+
+h2 {
+  position:absolute;
+  width:300px;
+  top:150px;
+  left:55%;
+   margin: -150px 0 0 -200px;
+}
+
+h2 {
+  animation: text-flicker 3s linear infinite;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+/*
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+-moz-box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+box-shadow: 0px 0px 78px 4px rgb(255, 255, 255);
+  }
+}
+*/
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}

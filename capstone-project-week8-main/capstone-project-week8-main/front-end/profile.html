@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="profile.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/677dd92f1d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2><img src="CONTACTED-LOGO.png" alt="LOGO"></h2>
+
+<div class="avatar-wrapper">
+  <img class="profile-pic" src="front-end\small-profile.png"/>
+  <div class="upload-button">
+  <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+  </div>
+  </div>
+
+  <input class="file-upload" type="file" accept="image/*"/>
+    <div class="profile">
+      <h1>Karam Nasser</h1>
+      <p class="title">Capstone Project</p> </div>
+    
+        <div>
+          <form action="http://localhost:3000/links" method="post">
+            <input type="text" name="facebook" placeholder=" " />
+            <br>
+            <input type="text" name="instagram" placeholder=" " />
+            <br>
+            <input type="text" name="twitter" placeholder=" " />
+            <br>
+            <input type="text" name="amazon" placeholder=" " />
+            <br>
+            <br />
+            <button id='links-button'>Update Links</button>
+            <div id="links-message-area"></div>
+          </form>
+        </div>
+
+        <div class="socialbtns">
+    <ul>
+        <li><a href="http://www.facebook.com" class="fa fa-lg fa-facebook"></a></li>
+        <li><a href="http://www.instagram.com" class="fa fa-lg fa-instagram"></a></li>
+        <li><a href="http://www.twitter.com" class="fa fa-lg fa-twitter"></a></li>
+        <li><a href="http://www.amazon.com" class="fa fa-lg fa-amazon"></a></li>
+    </ul>
+</div>
+
+        <br>
+        <div>
+          <form action="http://localhost:3000/phone" method="post">
+  <label for="phone">Phone #:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" 
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <br><br>
+        </div>
+      <br>
+      <input type="submit" class="button" value="Contact Send"/>
+      </form>
+      </div> 
+    <script src="index.js"></script>
+</body>
+</html> 
+<br>
+<br>
